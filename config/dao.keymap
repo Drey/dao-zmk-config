@@ -37,7 +37,7 @@
             #binding-cells = <0>;
             bindings =
                 <&moom>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 50>,
                 <&macro_press &kp LEFT_WIN &kp LEFT_ARROW>,
                 <&macro_release &kp LEFT_WIN &kp LEFT_ARROW>;
 
@@ -47,9 +47,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp RGUI &kp RALT &kp DOT>,
-                <&macro_release &kp RGUI &kp RALT &kp DOT>,
-                <&macro_wait_time 100>,
+                <&moom>,
+                <&macro_wait_time 50>,
                 <&macro_press &kp LEFT_WIN &kp RIGHT_ARROW>,
                 <&macro_release &kp LEFT_WIN &kp RIGHT_ARROW>;
 
@@ -61,9 +60,8 @@
             bindings =
                 <&moom>,
                 <&macro_wait_time 50>,
-                <&macro_press>,
-                <&kp LEFT_WIN &kp UP_ARROW>,
-                <&macro_release>;
+                <&macro_press &kp LEFT_WIN &kp UP_ARROW>,
+                <&macro_release &kp LEFT_WIN &kp UP_ARROW>;
 
             label = "MOOM_TOP_HALF";
         };
@@ -73,37 +71,36 @@
             bindings =
                 <&moom>,
                 <&macro_wait_time 50>,
-                <&macro_press>,
-                <&kp LEFT_WIN &kp DOWN_ARROW>,
-                <&macro_release>;
+                <&macro_press &kp LEFT_WIN &kp DOWN_ARROW>,
+                <&macro_release &kp LEFT_WIN &kp DOWN_ARROW>;
 
             label = "MOOM_BOTTOM_HALF";
         };
         moom_shrink: moom_shrink {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&moom>, <&macro_wait_time 50>, <&kp F8>;
+            bindings = <&moom>, <&macro_wait_time 50>, <&macro_tap &kp F8>;
 
             label = "MOOM_SHRINK";
         };
         moom_revert: moom_revert {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&moom>, <&macro_wait_time 50>, <&kp F6>;
+            bindings = <&moom>, <&macro_wait_time 50>, <&macro_tap &kp F6>;
 
             label = "MOOM_REVERT";
         };
         moom_left: moom_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&moom>, <&macro_wait_time 50>, <&kp F7>;
+            bindings = <&moom>, <&macro_wait_time 50>, <&macro_tap &kp F7>;
 
             label = "MOOM_LEFT";
         };
         moom_right: moom_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&moom>, <&macro_wait_time 50>, <&kp F9>;
+            bindings = <&moom>, <&macro_wait_time 50>, <&macro_tap &kp F9>;
 
             label = "MOOM_RIGHT";
         };
