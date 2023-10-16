@@ -38,7 +38,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&moom>,
+                <&kp LGUI &kp LALT &kp DOT>,
                 <&macro_release>,
                 <&macro_wait_time 50>,
                 <&macro_press>,
