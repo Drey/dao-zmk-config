@@ -104,6 +104,15 @@
 
             label = "MOOM_RIGHT";
         };
+        snagit: snagit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp RGUI &kp F13>,
+                <&macro_release &kp RGUI &kp F13>;
+            
+            label = "SNAGIT";
+        };
     };
 
     keymap {
@@ -142,7 +151,7 @@
         adjust_layer {
 
             bindings = <
-&sys_reset  &bootloader  &none         &none         &none         &none         &none           &none   &moom_left       &moom_shrink       &moom_right       &none  &bootloader  &sys_reset
+&sys_reset  &bootloader  &none         &none         &none         &none         &none           &snagit   &moom_left       &moom_shrink       &moom_right       &none  &bootloader  &sys_reset
             &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &moom   &moom_left_half  &moom_top_half     &moom_right_half  &none  &none
             &none        &none         &none         &none         &none         &none           &none   &none            &moom_bottom_half  &none             &none  &none
                                                      &trans        &none         &trans          &trans  &none            &trans
