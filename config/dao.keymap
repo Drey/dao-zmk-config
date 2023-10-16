@@ -38,11 +38,15 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI &kp LALT &kp DOT>,
+                <&kp LGUI &kp LALT>,
+                <&macro_tap>,
+                <&kp DOT>,
                 <&macro_release>,
                 <&macro_wait_time 100>,
                 <&macro_press>,
-                <&kp LEFT_WIN &kp LEFT_ARROW>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
                 <&macro_release>;
 
             label = "MOOM_LEFT_HALF";
