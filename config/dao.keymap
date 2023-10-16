@@ -26,7 +26,10 @@
         moom: moom {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp RGUI &kp RALT &kp DOT>;
+            bindings =
+                <&macro_press>,
+                <&kp RGUI &kp RALT &kp DOT>,
+                <&macro_release>;
 
             label = "MOOM";
         };
@@ -37,7 +40,8 @@
                 <&moom>,
                 <&macro_wait_time 50>,
                 <&macro_press>,
-                <&kp LEFT_WIN &kp LEFT_ARROW>;
+                <&kp LEFT_WIN &kp LEFT_ARROW>,
+                <&macro_release>;
 
             label = "MOOM_LEFT_HALF";
         };
@@ -48,7 +52,8 @@
                 <&moom>,
                 <&macro_wait_time 50>,
                 <&macro_press>,
-                <&kp LEFT_WIN &kp RIGHT_ARROW>;
+                <&kp LEFT_WIN &kp RIGHT_ARROW>,
+                <&macro_release>;
 
             label = "MOOM_RIGHT_HALF";
         };
@@ -59,7 +64,8 @@
                 <&moom>,
                 <&macro_wait_time 50>,
                 <&macro_press>,
-                <&kp LEFT_WIN &kp UP_ARROW>;
+                <&kp LEFT_WIN &kp UP_ARROW>,
+                <&macro_release>;
 
             label = "MOOM_TOP_HALF";
         };
@@ -70,7 +76,8 @@
                 <&moom>,
                 <&macro_wait_time 50>,
                 <&macro_press>,
-                <&kp LEFT_WIN &kp DOWN_ARROW>;
+                <&kp LEFT_WIN &kp DOWN_ARROW>,
+                <&macro_release>;
 
             label = "MOOM_BOTTOM_HALF";
         };
