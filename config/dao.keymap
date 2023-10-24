@@ -158,6 +158,17 @@
 
             label = "REDO";
         };
+        change_layout: change_layout {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &kp SPACE>,
+                <&macro_release>,
+                <&kp LEFT_GUI &kp SPACE>;
+
+            label = "CHANGE_LAYOUT";
+        };
     };
 
     combos {
@@ -206,6 +217,14 @@
             layers = <0>;
             timeout-ms = <20>;
             require-prior-idle-ms = <30>;
+        };
+
+        change_layout {
+            bindings = <&change_layout>;
+            key-positions = <40 41>;
+            layers = <0>;
+            timeout-ms = <20>;
+            require-prior-idle-ms = <50>;
         };
     };
 
