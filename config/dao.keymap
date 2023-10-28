@@ -169,6 +169,16 @@
 
             label = "CHANGE_LAYOUT";
         };
+        double_shift: double_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 30>,
+                <&kp LEFT_SHIFT>;
+
+            label = "DOUBLE_SHIFT";
+        };
     };
 
     combos {
@@ -221,6 +231,12 @@
             key-positions = <40 41>;
             layers = <0>;
             timeout-ms = <50>;
+        };
+
+        double_shift {
+            bindings = <&double_shift>;
+            key-positions = <39 42>;
+            layers = <0>;
         };
     };
 
