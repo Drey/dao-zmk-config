@@ -158,6 +158,27 @@
 
             label = "REDO";
         };
+        change_layout: change_layout {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &kp SPACE>,
+                <&macro_release>,
+                <&kp LEFT_GUI &kp SPACE>;
+
+            label = "CHANGE_LAYOUT";
+        };
+        double_shift: double_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 30>,
+                <&kp LEFT_SHIFT>;
+
+            label = "DOUBLE_SHIFT";
+        };
     };
 
     combos {
@@ -188,24 +209,34 @@
             bindings = <&lock_sceen>;
             key-positions = <15 16 17 18>;
             layers = <0>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <50>;
         };
 
         undo {
             bindings = <&undo>;
             key-positions = <21 22>;
             layers = <0>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <30>;
+            timeout-ms = <50>;
         };
 
         redo {
             bindings = <&redo>;
             key-positions = <22 23>;
             layers = <0>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <30>;
+            timeout-ms = <50>;
+        };
+
+        change_layout {
+            bindings = <&change_layout>;
+            key-positions = <40 41>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
+
+        double_shift {
+            bindings = <&double_shift>;
+            key-positions = <39 42>;
+            layers = <0>;
         };
     };
 
