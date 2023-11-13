@@ -215,7 +215,7 @@
 
         lock_screen {
             bindings = <&lock_sceen>;
-            key-positions = <15 16 17 18>;
+            key-positions = <5 4 3>;
             layers = <0>;
             timeout-ms = <50>;
         };
