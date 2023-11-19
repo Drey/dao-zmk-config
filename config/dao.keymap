@@ -295,10 +295,10 @@
 
         lower_layer {
             bindings = <
-&trans  &kp KP_NUMLOCK     &kp SLASH  &kp KP_N7  &kp KP_N8    &kp KP_N9  &kp AT_SIGN    &kp HASH       &kp LEFT_BRACKET      &kp UNDERSCORE   &kp PIPE          &kp RIGHT_BRACKET      &kp PERCENT          &kp RWIN
-        &mt LEFT_ALT STAR  &kp MINUS  &kp KP_N4  &kp KP_N5    &kp KP_N6  &kp KP_PLUS    &kp EQUAL      &kp LEFT_PARENTHESIS  &kp KP_ASTERISK  &kp AMPERSAND     &kp RIGHT_PARENTHESIS  &mt RIGHT_ALT CARET
-        &trans             &kp KP_N0  &kp KP_N1  &kp KP_N2    &kp KP_N3  &kp KP_DOT     &kp EXCL       &kp LEFT_BRACE        &kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_BRACE        &mt RCTRL DOLLAR
-                                                 &lt ADJ TAB  &trans     &trans         &kp BACKSPACE  &trans                &lt ADJ DEL
+&trans  &kp KP_NUMLOCK     &kp SLASH  &kp KP_N7  &kp KP_N8    &kp KP_N9  &kp AT_SIGN    &kp HASH   &kp LEFT_BRACKET      &kp UNDERSCORE   &kp PIPE          &kp RIGHT_BRACKET      &kp PERCENT          &kp RWIN
+        &mt LEFT_ALT STAR  &kp MINUS  &kp KP_N4  &kp KP_N5    &kp KP_N6  &kp KP_PLUS    &kp EQUAL  &kp LEFT_PARENTHESIS  &kp KP_ASTERISK  &kp AMPERSAND     &kp RIGHT_PARENTHESIS  &mt RIGHT_ALT CARET
+        &trans             &kp KP_N0  &kp KP_N1  &kp KP_N2    &kp KP_N3  &kp KP_DOT     &kp EXCL   &kp LEFT_BRACE        &kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_BRACE        &mt RCTRL DOLLAR
+                                                 &lt ADJ TAB  &trans     &trans         &trans     &trans                &lt ADJ DEL
             >;
         };
 
