@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: Drey
+    - name: zmkfirmware
       url-base: https://github.com/Drey
   projects:
     - name: zmk
-      remote: Drey
-      revision: dao
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
