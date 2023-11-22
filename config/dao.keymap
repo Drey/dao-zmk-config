@@ -42,6 +42,7 @@
 
             label = "MOOM";
         };
+
         moom_left_half: moom_left_half {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -55,6 +56,7 @@
 
             label = "MOOM_LEFT_HALF";
         };
+
         moom_right_half: moom_right_half {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -68,6 +70,7 @@
 
             label = "MOOM_RIGHT_HALF";
         };
+
         moom_top_half: moom_top_half {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -81,6 +84,7 @@
 
             label = "MOOM_TOP_HALF";
         };
+
         moom_bottom_half: moom_bottom_half {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -94,6 +98,7 @@
 
             label = "MOOM_BOTTOM_HALF";
         };
+
         moom_shrink: moom_shrink {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -101,6 +106,7 @@
 
             label = "MOOM_SHRINK";
         };
+
         moom_revert: moom_revert {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -108,6 +114,7 @@
 
             label = "MOOM_REVERT";
         };
+
         moom_left: moom_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -115,6 +122,7 @@
 
             label = "MOOM_LEFT";
         };
+
         moom_right: moom_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -122,6 +130,7 @@
 
             label = "MOOM_RIGHT";
         };
+
         snagit: snagit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -133,6 +142,7 @@
 
             label = "SNAGIT";
         };
+
         lock_sceen: lock_sceen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -144,6 +154,7 @@
 
             label = "LOCK_SCEEN";
         };
+
         undo: undo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -155,6 +166,7 @@
 
             label = "UNDO";
         };
+
         redo: redo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -166,6 +178,7 @@
 
             label = "REDO";
         };
+
         change_layout: change_layout {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -177,6 +190,7 @@
 
             label = "CHANGE_LAYOUT";
         };
+
         double_shift: double_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -187,6 +201,7 @@
 
             label = "DOUBLE_SHIFT";
         };
+
         plain_text: plain_text {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -226,7 +241,7 @@
 
         lock_screen {
             bindings = <&lock_sceen>;
-            key-positions = <5 4 3>;
+            key-positions = <16 17 18>;
             layers = <0>;
             timeout-ms = <50>;
         };
@@ -247,7 +262,7 @@
 
         change_layout {
             bindings = <&change_layout>;
-            key-positions = <18 17 16>;
+            key-positions = <18 17>;
             layers = <0>;
             timeout-ms = <50>;
         };
@@ -260,7 +275,7 @@
 
         plain_text {
             bindings = <&plain_text>;
-            key-positions = <28 29 30>;
+            key-positions = <16 17>;
             layers = <0>;
             timeout-ms = <50>;
         };
@@ -289,10 +304,10 @@
 
         raise_layer {
             bindings = <
-&trans  &trans  &none  &kp F7  &kp F8  &kp F9  &kp F10        &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS           &kp RIGHT_COMMAND
-        &trans  &none  &kp F4  &kp F5  &kp F6  &kp F11        &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &kp RIGHT_ALT
-        &trans  &none  &kp F1  &kp F2  &kp F3  &kp F12        &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RIGHT_CONTROL
-                               &trans  &trans  &lt ADJ RET    &lt ADJ ESC   &trans    &trans
+&trans  &trans  &none  &kp F7  &kp F8  &kp F9  &kp F10        &kp C_VOL_UP       &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS           &kp RIGHT_COMMAND
+        &trans  &none  &kp F4  &kp F5  &kp F6  &kp F11        &kp C_MUTE         &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &kp RIGHT_ALT
+        &trans  &none  &kp F1  &kp F2  &kp F3  &kp F12        &kp C_VOL_DN       &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RIGHT_CONTROL
+                               &trans  &trans  &lt ADJ RET    &lt ADJ BACKSPACE  &trans    &trans
             >;
         };
 
